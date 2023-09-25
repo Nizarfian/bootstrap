@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style type="text/css">
+      body {
+        padding-top: 300px;
+        background-color: powderblue;
+      }
+      .form-signup {
+        margin: 0 auto;
+        max-width: 450px;
+        background-color: white;
+        padding: 30px;
+        display: grid;
+        grid: 12px;
+      }
+
+      .checkbox-container {
+        display: inline-block;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .animated-checkbox {
+        display: none;
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border: 1px solid #ccc;
+        transition: background-color 0.2s;
+      }
+
+      .animated-checkbox:checked + .checkmark {
+        background-color: #2196f3;
+      }
+
+      .checkmark::before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        transition: opacity 0.2s;
+        opacity: 0;
+      }
+
+      .animated-checkbox:checked + .checkmark::before {
+        opacity: 1;
+      }
+      .submit {
+        text-align: center;
+        margin: 0 auto;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-signup">
+        <h2>Contact US</h2>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                name="firstname"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                name="lastname"
+                placeholder="Last Name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="Email address"
+          />
+        </div>
+        <div class="form-group">
+          <label class="checkbox-container">
+            <input type="checkbox" class="animated-checkbox" />
+            <span class="checkmark"></span>
+            I aggre to the Terms and Condition of this website
+          </label>
+        </div>
+        <div class="submit">
+          <input
+            type="submit"
+            class="btn btn-primary btn-block"
+            name=""
+            value="Submit"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

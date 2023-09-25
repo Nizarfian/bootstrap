@@ -1,0 +1,43 @@
+body {
+    font-family: Poppins, sans-serif;
+}
+.bg {
+    background-color: white;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.navbar{
+    font-size: 17px;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+.judul {
+    font-size: 44px;
+}
+.rounded-circle, .daftar{
+    background-color: #1278fc;
+    color: white;
+}
+.sub{
+    font-size: 17px;
+}
+.button {
+    gap: 50px;
+}
+.Free {
+    font-size: 14px;
+    background-color: #ff0000;
+}
+.konsultasi {
+    background-color: #f1ca08;
+}
+.coloumn {
+    background-color: white;
+}
+.coloumn p {
+    font-size: 15px;
+    width: 400px;
+}
